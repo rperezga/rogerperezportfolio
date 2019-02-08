@@ -23,10 +23,10 @@ let resumeData = {
       }
     ],
   "aboutme":"Passionate about new technologies and interacting with users, I decided to join the world of web development about a year ago. Freelancer, and recent graduate from a Full Stack Web Developer Bootcamp at the University of Miami.",
-  "aboutName": "  name:      'Roger Perez',",
-  "address":"  address:   'Doral, FL',",
-  "email":"  email:     'rperezga@gmail.com',",
-  "cellphone": "  cellphone: '(786) 307-3293'",
+  "aboutName": "  Name:      'Roger Perez',",
+  "address":"  Address:   'Doral, FL',",
+  "email":"  Email:     'rperezga@gmail.com',",
+  "cellphone": "  Cellphone: '(786) 307-3293'",
   
   "work":[    
     {
