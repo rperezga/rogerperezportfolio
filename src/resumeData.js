@@ -116,8 +116,6 @@ let resumeData = {
       "skillname":"Heroku"
     }
   ],
-
-
   "portfolio":[
     {
       "name":"Eat Da Burger",
