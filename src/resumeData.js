@@ -120,46 +120,52 @@ let resumeData = {
     {
       "name":"Eat Da Burger",
       "description":"Know which burgers I have already eaten",
-      "imgurl":"images/portfolio/1.jpg",
+      "imgurl":"images/portfolio/burger.jpg",
       "href":"https://eatdaburger-rpg.herokuapp.com/"
     },
     {
       "name":"The Simpsons",
       "description":"The Simpsons atack game",
-      "imgurl":"images/portfolio/7.jpg"
+      "imgurl":"images/portfolio/simpson.jpg",
+      "href":"https://rperezga.github.io/unit-4-game/"
     }, 
     {
       "name":"Hurrican Ready",
       "description":"Aplication to track strom and help us find products and gas available near us and give us some tips to be ready.",
-      "imgurl":"images/portfolio/3.jpg"
+      "imgurl":"images/portfolio/hurricane.jpg",
+      "href":"https://rperezga.github.io/project1/"
     },
     {
       "name":"Trivia Game",
       "description":"Check out your knowledge with this Trivia",
-      "imgurl":"images/portfolio/4.jpg"
+      "imgurl":"images/portfolio/trivia.jpg",
+      "href":"https://rperezga.github.io/TriviaGame/"
     }
   ],
   "portfolio1":[  
     {
       "name":"The Hangman",
       "description":"Hangman game",
-      "imgurl":"images/portfolio/6.jpg"
+      "imgurl":"images/portfolio/hangman.jpg",
+      "href":"https://rperezga.github.io/WordGuess/"
     },     
     {
       "name":"NYT React",
       "description":"Manage your interesting news from NYT",
-      "imgurl":"images/portfolio/2.jpg",
+      "imgurl":"images/portfolio/nyt.jpg",
       "href":"https://nytreact-roger.herokuapp.com/"
     },
     {
       "name":"Test Your Memory",
       "description":"Fancy game to test your memory",
-      "imgurl":"images/portfolio/8.jpg"
+      "imgurl":"images/portfolio/memory.jpg",
+      "href":"https://rperezga.github.io/test-your-memory/"
     }, 
     {
       "name":"Inventory Management System",
       "description":"Inventory System to easy find and manage my products stock",
-      "imgurl":"images/portfolio/5.jpg"
+      "imgurl":"images/portfolio/gsc.jpg",
+      "href":"https://gsc-inv-management-system.herokuapp.com/"
     },
     
   ],
