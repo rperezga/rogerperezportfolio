@@ -22,7 +22,7 @@ let resumeData = {
         "className":"fa fa-envelope"
       }
     ],
-  "aboutme":"Passionate about new technologies and interacting with users, I decided to join the world of web development about a year ago. Freelancer, and recent graduate from a Full Stack Web Developer Bootcamp at the University of Miami.",
+  "aboutme":"Professional IT Engineer with more than five years of experience in the Computer / Networking and Web Developer industry. I decided to join the world of web development about a year ago. Graduate from a Full Stack Web Developer Bootcamp at the University of Miami. Focus in web and mobile development with ReactJS, React Native, Node.js, Angular 2, Ionic Framework, and Responsive design.",
   "aboutName": "  Name:      'Roger Perez',",
   "address":"  Address:   'Doral, FL',",
   "email":"  Email:     'rperezga@gmail.com',",
@@ -34,21 +34,21 @@ let resumeData = {
       "specialization":"Network Administrator",
       "MonthOfLeaving":"Sept 2014 ",
       "YearOfLeaving":"– Present",
-      "Achievements":"Perform a wide range of network administration duties including installations, debugging, maintenance, and upgrades (Windows and Linux environments). Manage User Accounts on Window and UNIX Platform (Creation, Deletion, Permissions, and VPN Access). Develop organizational units in Active Directory (AD) and manage user security with group policies, assist with technical issues via email, live chat and telephone, providing real-time support to everyday users."
+      "Achievements":"Perform a wide range of network administration duties including installations, debugging, maintenance, and upgrades (Windows and Linux environments). Manage User Accounts on Window and UNIX Platform (Creation, Deletion, Permissions, and VPN Access). Develop organizational units in Active Directory (AD) and manage user security with group policies. Assist with technical issues via email, live chat and telephone, providing real-time support to everyday users."
     },
     {
       "CompanyName":"US Cash Out – USA",
       "specialization":"Founder & Developer (Freelancer)",
       "MonthOfLeaving":"Jan 2018 ",
       "YearOfLeaving":"– Present",
-      "Achievements":"Develop web applications using Angular2, NodeJS & Express, Web APIs, jQuery, and MongoDB within a Google cloud environment. Improve the responsiveness of the overall application using HTML5, and Angular 2. Build and maintain native iOS and Android applications using Ionic4 Framework."
+      "Achievements":"Build and maintain native iOS and Android applications using React Native and Redux. Developed REST API support CRUD with NodeJS & Express, and MongoDB and used Google Cloud Vision API (OCR) to extract text and OneSignal for push notifications delivered. Implemented User Authentication (Token-Based Authentication) using Firebase for Facebook integration and JWT with Passport. Also developed web portal for the admin support using React.js."
     },
     {
       "CompanyName":"Logisuite Corp., Miami, FL",
       "specialization":"Web Developer & Support",
       "MonthOfLeaving":"March 2013 ",
       "YearOfLeaving":"– Sept 2014",
-      "Achievements":"Developed reports; Wrote technical documentation in support of assigned projects (Crystal Report). Developed HTML views with HTML5, CSS3, Bootstrap. Responsible for the Installation of main applications to all new users and for the management of all existing accounts. Responsible for periodic backups of the clients’ data (SQL Server 2008 and 2012). Provided first level support via phone or by using remote support tools (TeamViewer, JoinMe, VNC or Windows Remote Connection)."
+      "Achievements":"Developed and launch the Company Website. Design and developed reports in support of assigned projects (Crystal Report). Responsible of install the application to new clients, as well as create and manage new and existing users. Responsible for provided periodic backups of the data of the clients (SQL Server 2008 and 2012)."
     }
   ],
 
@@ -88,32 +88,59 @@ let resumeData = {
       "skillname":"HTML5"
     },
     {
-      "skillname":"CSS"
+      "skillname":"CSS3"
+    },
+    {
+      "skillname":"JavaScript (ES6)"
     },
     {
       "skillname":"Reactjs"
+    },
+    {
+      "skillname":"React Native"
+    },
+    {
+      "skillname":"Angular 4 / Ionic"
     }
   ],
   "skills1":[
     {
-      "skillname":"Mongo DB"
+      "skillname":"Redux"
     },
     {
-      "skillname":"Node JS"
+      "skillname":"MongoDB / MySQL"
+    },
+    {
+      "skillname":"Node.js"
     },
     {
       "skillname":"Express"
+    },
+    {
+      "skillname":"Bootstrap"
+    },
+    {
+      "skillname":"Materialize"
     }
   ],
   "skills2":[
     {
-      "skillname":"Git/Github"
+      "skillname":"Git / Github"
     },
     {
-      "skillname":"Javascript/JQuery"
+      "skillname":"Jest, Mocha, Chai"
     },
     {
       "skillname":"Heroku"
+    },
+    {
+      "skillname":"Firebase"
+    },
+    {
+      "skillname":"JWT, Passport"
+    },
+    {
+      "skillname":"jQuery"
     }
   ],
   "portfolio":[

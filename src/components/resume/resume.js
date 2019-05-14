@@ -68,7 +68,7 @@ export default class Resume extends Component {
             <h1><span>Skills</span></h1>
           </div>
 
-          <div className="three columns main-col">
+          <div className="three columns">
             <ul className="skills">
               {
                 resumeData.skills && resumeData.skills.map((item) => {
@@ -82,7 +82,7 @@ export default class Resume extends Component {
             </ul>
           </div>
 
-          <div className="three columns main-col">
+          <div className="three columns">
             <ul className="skills">
               {
                 resumeData.skills1 && resumeData.skills1.map((item) => {
@@ -96,7 +96,7 @@ export default class Resume extends Component {
             </ul>
           </div>
 
-          <div className="three columns main-col">
+          <div className="three columns">
             <ul className="skills">
               {
                 resumeData.skills2 && resumeData.skills2.map((item) => {
