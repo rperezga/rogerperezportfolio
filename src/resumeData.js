@@ -260,28 +260,28 @@ let resumeData = {
       "images": [
         {
           src: "images/portfolio/lotto/01.jpg",
-          thumbnail: "images/portfolio/lotto/t_01.JPG",
+          thumbnail: "images/portfolio/lotto/t_01.jpg",
           thumbnailWidth: 260,
           thumbnailHeight: 174,
           caption: "Dashboard with the United States big Jackpots."
         },
         {
-          src: "images/portfolio/lotto/02.JPG",
-          thumbnail: "images/portfolio/lotto/t_02.JPG",
+          src: "images/portfolio/lotto/02.jpg",
+          thumbnail: "images/portfolio/lotto/t_02.jpg",
           thumbnailWidth: 260,
           thumbnailHeight: 174,
           caption: "Login view, using passport and JWT with node.js."
         },
         {
-          src: "images/portfolio/lotto/03.JPG",
-          thumbnail: "images/portfolio/lotto/t_03.JPG",
+          src: "images/portfolio/lotto/03.jpg",
+          thumbnail: "images/portfolio/lotto/t_03.jpg",
           thumbnailWidth: 260,
           thumbnailHeight: 174,
           caption: "Summary of the printers by buildings."
         },
         {
-          src: "images/portfolio/lotto/04.JPG",
-          thumbnail: "images/portfolio/lotto/t_04.JPG",
+          src: "images/portfolio/lotto/04.jpg",
+          thumbnail: "images/portfolio/lotto/t_04.jpg",
           thumbnailWidth: 260,
           thumbnailHeight: 174,
           caption: "Detail of each printer and easy recognition of the quantity of supplies in inventory."

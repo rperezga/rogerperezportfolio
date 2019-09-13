@@ -6,15 +6,15 @@ export default class Porfolio extends Component {
   render() {
     let resumeData = this.props.resumeData;
 
-    const IMAGES =
-      [{
-        src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
-        thumbnail: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_n.jpg",
-        thumbnailWidth: 320,
-        thumbnailHeight: 174,
-        tags: [{ value: "Ocean", title: "Ocean" }, { value: "People", title: "People" }],
-        caption: "Boats (Jeshu John - designerspics.com)"
-      }]
+    // const IMAGES =
+    //   [{
+    //     src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
+    //     thumbnail: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_n.jpg",
+    //     thumbnailWidth: 320,
+    //     thumbnailHeight: 174,
+    //     tags: [{ value: "Ocean", title: "Ocean" }, { value: "People", title: "People" }],
+    //     caption: "Boats (Jeshu John - designerspics.com)"
+    //   }]
 
     return (
       <section id="portfolio">
