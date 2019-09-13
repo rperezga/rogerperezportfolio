@@ -4,9 +4,15 @@
   "private": true,
   "homepage": "https://rperezga.github.io/rogerperezportfolio/",
   "dependencies": {
+    "material-auto-rotating-carousel": "^3.0.2",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
-    "react-scripts": "1.1.4"
+    "react-grid-gallery": "^0.5.5",
+    "react-image-gallery": "^0.9.1",
+    "react-modal": "^3.10.1",
+    "react-responsive-carousel": "^3.1.50",
+    "react-scripts": "1.1.4",
+    "react-swipeable-views": "^0.13.3"
   },
   "scripts": {
     "start": "react-scripts start",

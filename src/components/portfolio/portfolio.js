@@ -1,53 +1,38 @@
 import React, { Component } from 'react';
+import Gallery from 'react-grid-gallery';
+
 export default class Porfolio extends Component {
+
   render() {
     let resumeData = this.props.resumeData;
+
+    const IMAGES =
+      [{
+        src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
+        thumbnail: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_n.jpg",
+        thumbnailWidth: 320,
+        thumbnailHeight: 174,
+        tags: [{ value: "Ocean", title: "Ocean" }, { value: "People", title: "People" }],
+        caption: "Boats (Jeshu John - designerspics.com)"
+      }]
+
     return (
       <section id="portfolio">
         <div className="row">
           <div className="twelve columns collapsed">
             <h1>Check Out Some of My Works.</h1>
-            <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
-              {
-                resumeData.portfolio && resumeData.portfolio.map((item) => {
-                  return (
-                    <div className="columns portfolio-item">
-                      <div className="item-wrap">
-                        <a href="#modal-01">
-                          <img src={item.imgurl} className="item-img" />
-                          <div className="overlay">
-                            <div className="portfolio-item-meta">
-                              <h5>{item.name}</h5>
-                              <p>{item.description}</p>
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                  )
-                })
-              }
-            </div>
-            <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
-              {
-                resumeData.portfolio1 && resumeData.portfolio1.map((item) => {
-                  return (
-                    <div className="columns portfolio-item">
-                      <div className="item-wrap">
-                        <a href="#modal-01">
-                          <img src={item.imgurl} className="item-img" />
-                          <div className="overlay">
-                            <div className="portfolio-item-meta">
-                              <h5>{item.name}</h5>
-                              <p>{item.description}</p>
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                  )
-                })
-              }
+
+            <div>
+              {resumeData.portfolio && resumeData.portfolio.map((item) => {
+                return (
+                  <div>
+                    <h4>{item.name}</h4>
+                    <Gallery images={item.images} />
+                    <div style={{ marginTop: 20 }}></div>
+                    <hr />
+                  </div>
+                )
+              })}
             </div>
           </div>
         </div>
