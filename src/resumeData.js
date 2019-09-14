@@ -162,9 +162,6 @@ let resumeData = {
   "portfolio": [
     {
       "name": "One Home Care Solutions",
-      "description": "Network Management portal for the onsite IT department to help on the improvement in the company's support processes.",
-      "imgurl": "images/portfolio/one.jpg",
-      "href": "https://eatdaburger-rpg.herokuapp.com/",
       "images": [
         {
           src: "images/portfolio/one/01.JPG",
@@ -254,81 +251,72 @@ let resumeData = {
     },
     {
       "name": "2day Lotto - Freelancer - http://2daylotto.com/",
-      "description": "Network Management portal for the onsite IT department to help on the improvement in the company's support processes.",
-      "imgurl": "images/portfolio/one.jpg",
-      "href": "https://eatdaburger-rpg.herokuapp.com/",
       "images": [
         {
           src: "images/portfolio/lotto/01.jpg",
           thumbnail: "images/portfolio/lotto/t_01.jpg",
           thumbnailWidth: 260,
           thumbnailHeight: 174,
-          caption: "Dashboard with the United States big Jackpots."
+          caption: "Dashboard with the United States mains Jackpots."
         },
         {
           src: "images/portfolio/lotto/02.jpg",
           thumbnail: "images/portfolio/lotto/t_02.jpg",
           thumbnailWidth: 260,
           thumbnailHeight: 174,
-          caption: "Login view, using passport and JWT with node.js."
+          caption: "List of all United States lottery games with the latest update date."
         },
         {
           src: "images/portfolio/lotto/03.jpg",
           thumbnail: "images/portfolio/lotto/t_03.jpg",
           thumbnailWidth: 260,
           thumbnailHeight: 174,
-          caption: "Summary of the printers by buildings."
+          caption: "Summary of each lottery play with detailed view of the latest winning numbers."
         },
         {
           src: "images/portfolio/lotto/04.jpg",
           thumbnail: "images/portfolio/lotto/t_04.jpg",
           thumbnailWidth: 260,
           thumbnailHeight: 174,
-          caption: "Detail of each printer and easy recognition of the quantity of supplies in inventory."
+          caption: "Deteiled edit view of each day."
         }
       ]
     },
     {
-      "name": "U$ Cash Out - Freelancer",
-      "description": "Network Management portal for the onsite IT department to help on the improvement in the company's support processes.",
-      "imgurl": "images/portfolio/one.jpg",
-      "href": "https://eatdaburger-rpg.herokuapp.com/",
+      "name": "2day Trailers - Freelancer",
       "images": [
         {
-          src: "images/portfolio/one/01.JPG",
-          thumbnail: "images/portfolio/one/t_01.JPG",
+          src: "images/portfolio/trailers/01.jpg",
+          thumbnail: "images/portfolio/trailers/t_01.jpg",
           thumbnailWidth: 260,
           thumbnailHeight: 174,
-          caption: "Overview of the printers by location and general idea of how many printers with warning we have."
+          caption: "React Native app to see movie trailers to the google play store."
         },
         {
-          src: "images/portfolio/one/02.JPG",
-          thumbnail: "images/portfolio/one/t_02.JPG",
+          src: "images/portfolio/trailers/02.jpg",
+          thumbnail: "images/portfolio/trailers/t_02.jpg",
           thumbnailWidth: 260,
           thumbnailHeight: 174,
-          caption: "Login view, using passport and JWT with node.js."
+          caption: "React Native app to see movie trailers to the Apple App store."
         },
         {
-          src: "images/portfolio/one/03.JPG",
-          thumbnail: "images/portfolio/one/t_03.JPG",
+          src: "images/portfolio/trailers/03.jpg",
+          thumbnail: "images/portfolio/trailers/t_03.jpg",
           thumbnailWidth: 260,
           thumbnailHeight: 174,
-          caption: "Summary of the printers by buildings."
+          caption: "Search view and find by category."
         },
         {
-          src: "images/portfolio/one/04.JPG",
-          thumbnail: "images/portfolio/one/t_04.JPG",
+          src: "images/portfolio/trailers/04.jpg",
+          thumbnail: "images/portfolio/trailers/t_04.jpg",
           thumbnailWidth: 260,
           thumbnailHeight: 174,
-          caption: "Detail of each printer and easy recognition of the quantity of supplies in inventory."
+          caption: "Trailer detail view."
         }
       ]
     },
     {
       "name": "School Projects and Homeworks",
-      "description": "Network Management portal for the onsite IT department to help on the improvement in the company's support processes.",
-      "imgurl": "images/portfolio/one.jpg",
-      "href": "https://eatdaburger-rpg.herokuapp.com/",
       "images": [
         {
           src: "images/portfolio/school/burger.jpg",
