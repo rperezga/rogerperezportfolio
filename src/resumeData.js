@@ -1,10 +1,10 @@
 let resumeData = {
   "imagebaseurl": "https://techonoeticsclub.github.io/",
   "name": "Roger Perez",
-  "role": "Professional React.js and Node.js Web Developer",
+  "role": "Professional Full Stack Developer",
   "linkedinId": "https://www.linkedin.com/in/roger-perez-30467065/",
   "skypeid": "Your skypeid",
-  "roleDescription": "with more than 2 years in the web development industry.",
+  "roleDescription": "with more than 2 years in the web development industry and more than 1 year making native apps for Android and iOS.",
   "socialLinks": [
     {
       "name": "linkedin",
@@ -22,7 +22,7 @@ let resumeData = {
       "className": "fa fa-envelope"
     }
   ],
-  "aboutme": "A self-motivated ReactJS Developer with more than 8 years of experience in the IT industry, I decided to join the world of web development about 3 years ago. Graduate from a Full Stack Web Developer Bootcamp at the University of Miami. I am a professional with comprehensive training in hardware and software, who can accomplish assigned responsibilities with minimal supervision. Strong creative and analytical skills, willing to learn new things and actively seeking more challenging and advanced career opportunities in the Web Developer Field.",
+  "aboutme": "A self-motivated Full Stack Developer with more than 8 years of experience in the IT industry, I decided to join the world of web development about 3 years ago. Graduate from a Full Stack Web Developer Bootcamp at the University of Miami. I am a professional with comprehensive training in hardware and software, who can accomplish assigned responsibilities with minimal supervision. Strong creative and analytical skills, willing to learn new things and actively seeking more challenging and advanced career opportunities in the Web Developer Field.",
   "aboutName": "  Name:      'Roger Perez',",
   "address": "  Address:   'Doral, FL',",
   "email": "  Email:     'rperezga@gmail.com',",
@@ -44,13 +44,14 @@ let resumeData = {
         ]
     },
     {
-      "CompanyName": "Freelancer – USA",
-      "specialization": " React.js & React Native Developer",
+      "CompanyName": "Freelancer Full Stack Developer – USA",
+      "specialization": "Android(Java), iOS(Swift), React.js & React Native Developer",
       "MonthOfLeaving": "Jan 2018 ",
       "YearOfLeaving": "– Present",
       "Achievements":
         [
-          "US Cash Out   ----   Build and maintain native iOS and Android applications to read Lottery Tickets using React Native and Redux. Developed REST API support CRUD with NodeJS & Express, and MongoDB and used Google Cloud Vision API (OCR) to extract text and One Signal for push notifications delivered. Implemented User Authentication (Token-Based Authentication) using Firebase for Facebook integration and JWT with Passport. Also developed web portal for the admin support using React.js.",
+          "Find It Easy   ----  Build and maintain native iOS(Swift) and Android(java) application that allow and easy and accurate navigation. Supported in a CRUD REST API whit NodeJS, MongoDB and Mapbox API services to allow the Maps integration and navigation.", 
+          "US Cash Out   ----   Build and maintain iOS and Android applications to read Lottery Tickets using React Native and Redux. Developed REST API support CRUD with NodeJS & Express, and MongoDB and used Google Cloud Vision API (OCR) to extract text and One Signal for push notifications delivered. Implemented User Authentication (Token-Based Authentication) using Firebase for Facebook integration and JWT with Passport. Also developed web portal for the admin support using React.js.",
           "2Day Trailers  ----   Developer a movie trailers app using React Native and React Navigation. Deployed to Google Play and the Apple App Store "
         ]
     },
@@ -101,22 +102,22 @@ let resumeData = {
 
   "skills": [
     {
-      "skillname": "HTML5"
-    },
-    {
-      "skillname": "CSS3"
-    },
-    {
-      "skillname": "JavaScript (ES6)"
-    },
-    {
       "skillname": "Reactjs"
     },
     {
       "skillname": "React Native"
     },
     {
-      "skillname": "Angular 4 / Ionic"
+      "skillname": "JavaScript (ES6)"
+    },
+    {
+      "skillname": "iOS (Swift)"
+    },
+    {      
+      "skillname": "Android (Java)"
+    },
+    {
+      "skillname": "Mapbox and Google Maps"
     }
   ],
   "skills1": [
@@ -133,7 +134,7 @@ let resumeData = {
       "skillname": "Express"
     },
     {
-      "skillname": "Bootstrap"
+      "skillname": "Windows / Apple / Linux"
     },
     {
       "skillname": "Materialize"
@@ -144,7 +145,7 @@ let resumeData = {
       "skillname": "Git / Github"
     },
     {
-      "skillname": "Jest, Mocha, Chai"
+      "skillname": "Atlasian (Jira / Bitbucket)"
     },
     {
       "skillname": "Heroku"
@@ -156,7 +157,7 @@ let resumeData = {
       "skillname": "JWT, Passport"
     },
     {
-      "skillname": "jQuery"
+      "skillname": "Bootstrap"      
     }
   ],
   "portfolio": [
@@ -247,6 +248,123 @@ let resumeData = {
           thumbnailHeight: 174,
           caption: "User list and detail view for different local applications and for HR Control."
         },
+      ]
+    },
+    {
+      "name": "Find It Easy - Native Mobile Developer - http://finditeasy.us/",
+      "images": [
+        {
+          src: "images/portfolio/fie/a.jpg",
+          thumbnail: "images/portfolio/fie/t_a.jpg",
+          thumbnailWidth: 260,
+          thumbnailHeight: 174,
+          caption: "View of your current position on map."
+        },
+        {
+          src: "images/portfolio/fie/b.jpg",
+          thumbnail: "images/portfolio/fie/t_b.jpg",
+          thumbnailWidth: 260,
+          thumbnailHeight: 174,
+          caption: "Search view example."
+        },
+        {
+          src: "images/portfolio/fie/c.jpg",
+          thumbnail: "images/portfolio/fie/t_c.jpg",
+          thumbnailWidth: 260,
+          thumbnailHeight: 174,
+          caption: "Multiroute example with sort of stops."
+        },
+        {
+          src: "images/portfolio/fie/d.jpg",
+          thumbnail: "images/portfolio/fie/t_d.jpg",
+          thumbnailWidth: 260,
+          thumbnailHeight: 174,
+          caption: "Navigation example using Mapbox."
+        },
+        {
+          src: "images/portfolio/fie/01.jpg",
+          thumbnail: "images/portfolio/fie/t_01.jpg",
+          thumbnailWidth: 260,
+          thumbnailHeight: 174,
+          caption: "View of the application in the Google Play Store."
+        },
+        {
+          src: "images/portfolio/fie/02.jpg",
+          thumbnail: "images/portfolio/fie/t_02.jpg",
+          thumbnailWidth: 260,
+          thumbnailHeight: 174,
+          caption: "View of the application in the App Store."
+        },
+        {
+          src: "images/portfolio/fie/03.jpg",
+          thumbnail: "images/portfolio/fie/t_03.jpg",
+          thumbnailWidth: 260,
+          thumbnailHeight: 174,
+          caption: "Find It Easy website main page."
+        },
+        {
+          src: "images/portfolio/fie/04.jpg",
+          thumbnail: "images/portfolio/fie/t_04.jpg",
+          thumbnailWidth: 260,
+          thumbnailHeight: 174,
+          caption: "Portal view to view and check the searches address."
+        },
+        {
+          src: "images/portfolio/fie/05.jpg",
+          thumbnail: "images/portfolio/fie/t_05.jpg",
+          thumbnailWidth: 260,
+          thumbnailHeight: 174,
+          caption: "Show last positions register for the users."
+        },
+        {
+          src: "images/portfolio/fie/06.jpg",
+          thumbnail: "images/portfolio/fie/t_06.jpg",
+          thumbnailWidth: 260,
+          thumbnailHeight: 174,
+          caption: "Example of user searches on the admin confirmation screen."
+        },
+        {
+          src: "images/portfolio/fie/07.jpg",
+          thumbnail: "images/portfolio/fie/t_07.jpg",
+          thumbnailWidth: 260,
+          thumbnailHeight: 174,
+          caption: "Address already confirmed."
+        },
+        {
+          src: "images/portfolio/fie/08.jpg",
+          thumbnail: "images/portfolio/fie/t_08.jpg",
+          thumbnailWidth: 260,
+          thumbnailHeight: 174,
+          caption: "Screen to fix address using user recomendations."
+        },
+        {
+          src: "images/portfolio/fie/09.jpg",
+          thumbnail: "images/portfolio/fie/t_09.jpg",
+          thumbnailWidth: 260,
+          thumbnailHeight: 174,
+          caption: "Login portal screen."
+        },
+        {
+          src: "images/portfolio/fie/10.jpg",
+          thumbnail: "images/portfolio/fie/t_10.jpg",
+          thumbnailWidth: 260,
+          thumbnailHeight: 174,
+          caption: "User dashboard"
+        },
+        {
+          src: "images/portfolio/fie/11.jpg",
+          thumbnail: "images/portfolio/fie/t_11.jpg",
+          thumbnailWidth: 260,
+          thumbnailHeight: 174,
+          caption: "Profile view."
+        },
+        {
+          src: "images/portfolio/fie/12.jpg",
+          thumbnail: "images/portfolio/fie/t_12.jpg",
+          thumbnailWidth: 260,
+          thumbnailHeight: 174,
+          caption: "Screen to edit an specific user."
+        }
       ]
     },
     {
