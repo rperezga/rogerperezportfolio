@@ -304,6 +304,8 @@ h1, h2, h3, h4 { font-family: var(--font-head); line-height: 1.2; margin: 0; let
   .hero { padding-top: 72px; }
   .stats { grid-template-columns: 1fr 1fr; }
   .section { padding-top: 56px; }
+  .cta-h br { display: none; }   /* sin salto forzado: que el título fluya natural en móvil */
+  .term pre { font-size: 12px; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
