@@ -1,10 +1,8 @@
-/* Roger Perez — portfolio. i18n EN (fuente en el HTML) / ES (overrides aquí) + limpieza del SW viejo. */
+/* Roger Perez — portfolio (Obsidian Synth). i18n EN (fuente en HTML) / ES (overrides) + limpieza SW. */
 (function () {
   'use strict';
 
-  /* ── 1. Matar el service worker del sitio de 2020 ─────────────────────────
-     La CRA vieja registró un SW que cachea agresivamente; sin esto, quien ya
-     visitó el sitio seguiría viendo la versión de 2020 para siempre. */
+  /* ── 1. Matar el service worker del sitio de 2020 (visitantes antiguos) ── */
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.getRegistrations()
       .then(function (regs) { regs.forEach(function (r) { r.unregister(); }); })
@@ -20,54 +18,57 @@
     nav_how: 'Cómo trabajo',
     nav_exp: 'Experiencia',
     nav_contact: 'Contacto',
+    nav_hire: 'Contrátame',
 
-    hero_hi: 'Hola, soy',
-    hero_role: 'Desarrollador Full-Stack',
-    hero_tag: 'Seis aplicaciones en producción — diseñadas, construidas, publicadas y operadas de punta a punta. Todo lo de abajo está <strong>vivo y clicable</strong>, no son repos de tutorial.',
-    cta_projects: 'Ver los proyectos ↓',
-    hero_loc: 'Miami, FL',
-    hero_open: 'abierto a roles full-stack, backend e IT',
+    hero_eyebrow: 'DESARROLLADOR FULL-STACK — MIAMI, FL',
+    hero_h1: 'Construyo y opero <span class="grad">software real</span>.',
+    hero_tag: 'Seis aplicaciones en producción — diseñadas, construidas, publicadas y operadas de punta a punta. Todo lo de aquí está <strong>vivo y clicable</strong>, no son repos de tutorial. Del metal al navegador.',
+    cta_proof: 'Ver las pruebas ↓',
+    st_1: 'APPS EN PRODUCCIÓN',
+    st_2: 'CARGAS REALES ANALIZADAS',
+    st_3: 'TESTS EN UNA SUITE',
+    st_4: 'SELF-HOSTED Y OPERADO',
 
-    sec_projects: 'Proyectos — todos en producción',
-    sec_projects_sub: 'Construidos en solitario, de punta a punta: código, tests, CI, deploys, DNS, backups y endurecimiento de seguridad.',
+    k_projects: 'PRUEBA DE TRABAJO',
+    sec_projects: 'Trabajos seleccionados',
+    sec_projects_sub: 'Sistemas de nivel producción que diseñé, construí y desplegué — en solitario, de punta a punta: código, tests, CI, deploys, DNS, backups y endurecimiento de seguridad.',
     b_live: 'EN VIVO',
     b_private: 'INFRA PRIVADA',
-    l_app: 'App ↗', l_landing: 'Landing ↗', l_demo: 'Demo en vivo ↗', l_code: 'Código ↗', l_site: 'Sitio ↗',
-    l_private_code: 'código privado — demo bajo petición',
+    l_live: 'En vivo ↗', l_landing: 'Landing ↗', l_code: 'Código ↗',
+    l_private_code: '// código privado — demo bajo petición',
 
     p_expedai_what: 'SaaS de load board AI-native para el nicho expedite de EE. UU. — un marketplace de dos lados en tiempo real.',
-    p_expedai_1: 'Tablero en tiempo real con el ciclo completo publicar → pujar → adjudicar (change streams de Socket.IO)',
+    p_expedai_1: 'Ciclo completo publicar → pujar → adjudicar sobre change streams de Socket.IO',
     p_expedai_2: 'Millas de conducción reales con un motor OSRM self-hosted (mapa de EE. UU. de 72 GB)',
-    p_expedai_3: 'Analítica de mercado sobre 424K+ cargas históricas reales (mapa de calor + explorador de lanes)',
-    p_expedai_4: 'Copilot de IA que redacta pujas — un humano siempre aprueba; cada llamada de IA queda registrada',
+    p_expedai_3: 'Analítica de mercado sobre 424K+ cargas históricas reales',
+    p_expedai_4: 'Copilot de IA que redacta pujas — un humano siempre aprueba',
 
     p_closing_what: 'Plataforma de cierres inmobiliarios — la prueba relacional: PostgreSQL, transacciones y agregados SQL.',
-    p_closing_1: 'Grafo del deal (partes + checklist de documentos) creado en una sola transacción',
-    p_closing_2: 'Transiciones de documentos auditadas (de → a) y milestones de escrow en centavos enteros',
-    p_closing_3: 'Dashboard calculado en SQL — GROUP BY / SUM / joins, no en código de aplicación',
+    p_closing_1: 'Grafo del deal creado en una sola transacción',
+    p_closing_2: 'Transiciones de documentos auditadas · escrow en centavos enteros',
+    p_closing_3: 'Dashboard calculado en SQL puro',
 
-    p_kryndel_what: 'Observabilidad open-source de smart contracts para el ecosistema XRPL (EVM Sidechain + XLS-0101 nativo), en mainnet.',
-    p_kryndel_1: 'Alertas de eventos decodificados en tiempo real → Telegram, Discord, webhooks firmados',
-    p_kryndel_2: 'Cascada de decodificación ABI de 3 niveles y despacho con guardia SSRF (protección DNS-rebinding)',
-    p_kryndel_3: 'Billing con Stripe, API keys con rate limiting, 288 tests — Vercel + worker 24/7 self-hosted',
+    p_kryndel_what: 'Observabilidad open-source de smart contracts para el ecosistema XRPL, en mainnet.',
+    p_kryndel_1: 'Alertas de eventos decodificados → Telegram, Discord, webhooks firmados',
+    p_kryndel_2: 'Despacho con guardia SSRF y protección DNS-rebinding',
+    p_kryndel_3: 'Billing con Stripe · API keys + rate limiting · 288 tests',
 
-    p_careflow_what: 'Dashboard de operaciones de cuidado (MERN + TypeScript): pacientes, tareas de seguimiento y auditoría, tras auth por roles.',
-    p_careflow_1: 'Acceso por roles (admin/staff/viewer), escrituras auditadas, dashboard con $facet de MongoDB',
-    p_careflow_2: 'Tablero en vivo por WebSockets; el CI corre los tests contra un MongoDB real en contenedor',
-    p_careflow_3: 'Backups nocturnos con restauración probada y documentada',
+    p_careflow_what: 'Dashboard de operaciones de cuidado (MERN + TypeScript): pacientes, tareas de seguimiento y auditoría.',
+    p_careflow_1: 'Acceso por roles · escrituras auditadas · dashboard con $facet',
+    p_careflow_2: 'Tablero en vivo por WebSockets · CI contra MongoDB real',
+    p_careflow_3: 'Backups nocturnos con restauración probada',
 
-    p_uscashout_what: 'Dashboard cripto multi-moneda bilingüe — frontend vanilla JS cero-build, backend Express + MongoDB.',
-    p_uscashout_1: '9 monedas: técnico, derivados, noticias, ballenas on-chain y watcher de quema XRPL (WebSocket)',
-    p_uscashout_2: 'Vista de portafolio con P&L histórico (snapshots diarios + reconstrucción por precios)',
-    p_uscashout_3: 'Endurecido tras arreglar un XSS almacenado real: CSP estricta, Chart.js self-hosted, datos etiquetados con honestidad',
+    p_uscashout_what: 'Analítica cripto multi-moneda bilingüe — frontend vanilla JS cero-build, backend Express + MongoDB.',
+    p_uscashout_1: '9 monedas · watcher de quema XRPL por WebSocket',
+    p_uscashout_2: 'Portafolio con P&L histórico',
+    p_uscashout_3: 'Endurecido tras arreglar un XSS almacenado real (CSP estricta)',
 
-    p_hermes_what: 'El agente de IA self-hosted que opera todo lo anterior — mi flota de producción en un servidor Linux.',
-    p_hermes_1: 'Ejecuta runbooks de deploy con gates de verificación duros: salida cruda o no pasó',
-    p_hermes_2: 'Operaciones de PRs/CI en GitHub, jobs programados, alertas por Telegram, bitácora append-only',
-    p_hermes_3: 'Pipeline de búsqueda de empleo con una regla innegociable: nada se envía solo',
-    p_hermes_note: 'se cuenta en entrevista — screenshots y bitácora disponibles',
+    p_hermes_what: 'El agente de IA self-hosted que opera todo lo anterior — mi flota de producción en un servidor Linux. Ejecuta runbooks de deploy con gates de verificación duros (salida cruda o no pasó), lleva las operaciones de PRs/CI en GitHub y los jobs programados, y conduce un pipeline de búsqueda de empleo donde nada se envía solo.',
+    p_hermes_note: '// se cuenta en entrevista — screenshots y bitácora disponibles',
 
-    sec_how: 'Cómo trabajo',
+    k_how: 'MÉTODO',
+    sec_how: 'La ética de ingeniería',
+    sec_how_sub: 'No solo escribo código — diseño sistemas que siguen funcionando cuando dejo de mirarlos.',
     how_1_t: 'Como un equipo, aun en solitario',
     how_1_p: 'GitHub Flow con main protegida, PRs revisados, Conventional Commits y CI (lint + type-check + tests + build) en cada push.',
     how_2_t: 'Operaciones basadas en evidencia',
@@ -75,9 +76,11 @@
     how_3_t: 'Dueño del ciclo completo',
     how_3_p: 'Self-hosted: pm2, MongoDB/PostgreSQL con auth, binds a loopback tras Cloudflare Tunnels, backups nocturnos probados, endurecimiento (CSP, XSS, SSRF).',
     how_4_t: 'IA con adultos en la sala',
-    how_4_p: 'Integro LLMs donde ayudan (redacción, triaje, operaciones) con salida validada por esquema, logging, y un humano aprobando lo que importa.',
+    how_4_p: 'LLMs donde ayudan — redacción, triaje, operaciones — con salida validada por esquema, logging, y un humano aprobando lo que importa.',
 
-    sec_exp: 'Experiencia',
+    k_exp: 'TRAYECTORIA',
+    sec_exp: 'Línea de tiempo profesional',
+    x_now: 'Actualidad',
     x1_role: 'Desarrollador Full-Stack independiente',
     x1_p: 'Diseñé, construí y opero las seis aplicaciones en producción de arriba — en solitario, de punta a punta.',
     x2_role: 'Especialista de Soporte IT Tier 2',
@@ -89,20 +92,22 @@
     x5_role: 'Ingeniería (B.Sc.)',
     x5_p: 'Título de ingeniería.',
 
-    sec_skills: 'Habilidades',
-    sk_test: 'Testing/CI:',
-    sk_sec: 'Seguridad:',
-    sk_also: 'Además:',
+    k_skills: 'STACK',
+    sec_skills: 'El toolkit',
+    tk_1: 'INGENIERÍA CORE',
+    tk_2: 'TESTING Y CALIDAD',
+    tk_3: 'OPS Y SEGURIDAD',
+    tk_4: 'IA E INTEGRACIONES',
 
-    sec_contact: 'Hablemos',
-    contact_p: '¿Contratas para full-stack, backend o IT? La forma más rápida de evaluarme es clicar los proyectos de arriba — y luego escribirme.',
+    sec_contact: 'La forma más rápida de evaluarme<br />es clicar mi trabajo.',
+    contact_p: '¿Contratas para full-stack, backend o IT? Hablemos.',
 
     foot_1: 'Hecho sin dependencias — HTML/CSS/JS puro, sin framework, sin build step.',
     foot_src: 'Ver el código ↗'
   };
 
   /* ── 3. Motor i18n ──────────────────────────────────────────────────────── */
-  var EN = {};                      // se llena con el contenido original del HTML
+  var EN = {};
   var nodes = document.querySelectorAll('[data-i18n]');
   nodes.forEach(function (el) { EN[el.getAttribute('data-i18n')] = el.innerHTML; });
 

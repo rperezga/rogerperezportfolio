@@ -5,14 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Roger Perez — Full-Stack Developer</title>
   <meta name="description" content="Full-Stack Developer (TypeScript · React · Node · MongoDB/PostgreSQL). Six production apps designed, built, shipped and operated end-to-end — all live and clickable." />
-  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#0a0e14" />
   <link rel="icon" href="./favicon.ico" />
-  <link rel="stylesheet" href="./style.css?v=2" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css?v=3" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Roger Perez — Full-Stack Developer" />
-  <meta property="og:description" content="Six production apps — designed, built, shipped and operated end-to-end. Everything is live and clickable." />
+  <meta property="og:description" content="I build and run real software. Six production apps — all live and clickable." />
   <meta property="og:url" content="https://rperezga.github.io/rogerperezportfolio/" />
 
   <!-- Structured data -->
@@ -44,231 +47,261 @@
       <a href="#contact" data-i18n="nav_contact">Contact</a>
     </div>
     <button id="lang-toggle" class="lang" type="button" aria-label="Cambiar idioma / Switch language">ES</button>
+    <a class="btn btn-primary btn-nav" href="mailto:rperezga@gmail.com" data-i18n="nav_hire">Hire me</a>
   </nav>
 </header>
 
 <main id="top">
 
-  <!-- ═══ HERO (fondo original del sitio de 2019, optimizado) ═══ -->
-  <div class="hero-wrap">
+  <!-- ═══ HERO ═══ -->
   <section class="hero">
-    <p class="hero-hi" data-i18n="hero_hi">Hi, I'm</p>
-    <h1>Roger Perez</h1>
-    <h2 class="hero-role" data-i18n="hero_role">Full-Stack Developer</h2>
-    <p class="hero-stack">TypeScript · React · Node.js · MongoDB / PostgreSQL</p>
+    <p class="eyebrow"><span class="pulse-dot"></span><span data-i18n="hero_eyebrow">FULL-STACK DEVELOPER — MIAMI, FL</span></p>
+    <h1 data-i18n="hero_h1">I build and run <span class="grad">real software</span>.</h1>
     <p class="hero-tag" data-i18n="hero_tag">
       Six production apps — designed, built, shipped and operated end-to-end.
-      Everything below is <strong>live and clickable</strong>, not tutorial repos.
+      Everything here is <strong>live and clickable</strong>, not tutorial repos. From metal to browser.
     </p>
     <div class="hero-cta">
-      <a class="btn btn-primary" href="#projects" data-i18n="cta_projects">See the projects ↓</a>
-      <a class="btn" href="https://github.com/rperezga" target="_blank" rel="noopener">GitHub</a>
-      <a class="btn" href="https://www.linkedin.com/in/roger-perez-30467065/" target="_blank" rel="noopener">LinkedIn</a>
-      <a class="btn" href="mailto:rperezga@gmail.com">Email</a>
+      <a class="btn btn-primary" href="#projects" data-i18n="cta_proof">See the proof ↓</a>
+      <a class="btn btn-ghost" href="https://github.com/rperezga" target="_blank" rel="noopener">GitHub ↗</a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/roger-perez-30467065/" target="_blank" rel="noopener">LinkedIn ↗</a>
     </div>
-    <p class="hero-meta">
-      <span data-i18n="hero_loc">Miami, FL</span> ·
-      <span data-i18n="hero_open">open to full-stack, backend &amp; IT roles</span>
-    </p>
-    <a class="hero-scroll" href="#projects" aria-label="Scroll to projects">↓</a>
+
+    <div class="stats">
+      <div class="stat"><span class="stat-n">6</span><span class="stat-l" data-i18n="st_1">APPS IN PRODUCTION</span></div>
+      <div class="stat"><span class="stat-n">424K+</span><span class="stat-l" data-i18n="st_2">REAL LOADS ANALYZED</span></div>
+      <div class="stat"><span class="stat-n">288</span><span class="stat-l" data-i18n="st_3">TESTS IN ONE SUITE</span></div>
+      <div class="stat"><span class="stat-n">100%</span><span class="stat-l" data-i18n="st_4">SELF-HOSTED &amp; OPERATED</span></div>
+    </div>
   </section>
-  </div>
 
-  <!-- ═══ PROJECTS ═══ -->
+  <!-- ═══ SELECTED WORKS ═══ -->
   <section id="projects" class="section">
-    <h3 class="section-title" data-i18n="sec_projects">Projects — all in production</h3>
-    <p class="section-sub" data-i18n="sec_projects_sub">Built solo, end-to-end: code, tests, CI, deploys, DNS, backups and security hardening.</p>
+    <p class="kicker" data-i18n="k_projects">PROOF OF WORK</p>
+    <h2 data-i18n="sec_projects">Selected works</h2>
+    <p class="section-sub" data-i18n="sec_projects_sub">Production-grade systems I designed, built and deployed — solo, end-to-end: code, tests, CI, deploys, DNS, backups and security hardening.</p>
 
-    <div class="grid">
+    <div class="bento">
 
-      <!-- ExpedAi -->
+      <!-- ExpedAi — featured -->
       <article class="card card-featured">
-        <div class="card-head">
-          <h4>ExpedAi</h4>
-          <span class="badge badge-live" data-i18n="b_live">LIVE</span>
+        <div class="feat-copy">
+          <div class="card-head">
+            <h3>ExpedAi</h3>
+            <span class="badge badge-live"><span class="pulse-dot"></span><span data-i18n="b_live">LIVE</span></span>
+          </div>
+          <p class="card-what" data-i18n="p_expedai_what">AI-native freight load board SaaS for the U.S. expedite niche — a real-time, two-sided marketplace.</p>
+          <ul class="card-points">
+            <li data-i18n="p_expedai_1">Full post → bid → award loop over Socket.IO change streams</li>
+            <li data-i18n="p_expedai_2">Real driving miles from a self-hosted OSRM engine (72&nbsp;GB U.S. map)</li>
+            <li data-i18n="p_expedai_3">Market analytics over 424K+ real historical loads</li>
+            <li data-i18n="p_expedai_4">AI bid-drafting Copilot — a human always approves</li>
+          </ul>
+          <p class="chips"><span>React</span><span>Node/Express</span><span>MongoDB</span><span>Socket.IO</span><span>OSRM</span><span>Stripe</span><span>OpenAI</span></p>
+          <p class="card-links">
+            <a class="btn btn-primary btn-sm" href="https://app.expedai.us" target="_blank" rel="noopener" data-i18n="l_live">Live ↗</a>
+            <a class="btn btn-ghost btn-sm" href="https://expedai.us" target="_blank" rel="noopener" data-i18n="l_landing">Landing ↗</a>
+            <span class="muted mono" data-i18n="l_private_code">// code private — demo on request</span>
+          </p>
         </div>
-        <p class="card-what" data-i18n="p_expedai_what">AI-native freight load board SaaS for the U.S. expedite niche — a real-time, two-sided marketplace.</p>
-        <ul class="card-points">
-          <li data-i18n="p_expedai_1">Real-time board with the full post → bid → award loop (Socket.IO change streams)</li>
-          <li data-i18n="p_expedai_2">Real driving miles from a self-hosted OSRM routing engine (72&nbsp;GB U.S. map)</li>
-          <li data-i18n="p_expedai_3">Market analytics over 424K+ real historical loads (heatmap + lane explorer)</li>
-          <li data-i18n="p_expedai_4">AI bid-drafting Copilot — a human always approves; every AI call logged</li>
-        </ul>
-        <p class="chips"><span>React</span><span>Node/Express</span><span>MongoDB</span><span>Socket.IO</span><span>OSRM</span><span>Stripe</span><span>OpenAI</span></p>
-        <p class="card-links">
-          <a href="https://app.expedai.us" target="_blank" rel="noopener" data-i18n="l_app">App ↗</a>
-          <a href="https://expedai.us" target="_blank" rel="noopener" data-i18n="l_landing">Landing ↗</a>
-          <span class="muted" data-i18n="l_private_code">code private — demo on request</span>
-        </p>
+        <div class="feat-term" aria-hidden="true">
+          <div class="term">
+            <div class="term-bar"><span class="tl r"></span><span class="tl y"></span><span class="tl g"></span><span class="term-title mono">expedai — production</span></div>
+            <pre class="mono"><span class="t-p">$</span> curl -s https://app.expedai.us/health
+<span class="t-j">{
+  "status": <span class="t-s">"ok"</span>,
+  "service": <span class="t-s">"expedai-api"</span>,
+  "db": <span class="t-s">"ok"</span>,
+  "boardFeed": <span class="t-s">"change-stream"</span>,
+  "fleetFeed": <span class="t-s">"change-stream"</span>
+}</span>
+<span class="t-p">$</span> <span class="t-c">— a real response from the live API</span><span class="cursor">▌</span></pre>
+          </div>
+        </div>
       </article>
 
       <!-- closing-room -->
       <article class="card">
         <div class="card-head">
-          <h4>closing-room</h4>
-          <span class="badge badge-live" data-i18n="b_live">LIVE</span>
+          <h3>closing-room</h3>
+          <span class="badge badge-live"><span data-i18n="b_live">LIVE</span></span>
         </div>
         <p class="card-what" data-i18n="p_closing_what">Real-estate closing platform — the relational proof: PostgreSQL, transactions and SQL aggregates.</p>
         <ul class="card-points">
-          <li data-i18n="p_closing_1">Deal graph (parties + document checklist) created in a single transaction</li>
-          <li data-i18n="p_closing_2">Audited document state transitions (from → to) and escrow milestones in integer cents</li>
-          <li data-i18n="p_closing_3">Dashboard computed in SQL — GROUP BY / SUM / joins, not application code</li>
+          <li data-i18n="p_closing_1">Deal graph created in a single transaction</li>
+          <li data-i18n="p_closing_2">Audited document transitions · escrow in integer cents</li>
+          <li data-i18n="p_closing_3">Dashboard computed in pure SQL</li>
         </ul>
         <p class="chips"><span>TypeScript</span><span>PostgreSQL</span><span>Prisma</span><span>Express</span><span>React</span></p>
         <p class="card-links">
-          <a href="https://closing.smectherapy.com" target="_blank" rel="noopener" data-i18n="l_demo">Live demo ↗</a>
-          <a href="https://github.com/rperezga/closing-room" target="_blank" rel="noopener" data-i18n="l_code">Code ↗</a>
+          <a class="btn btn-primary btn-sm" href="https://closing.smectherapy.com" target="_blank" rel="noopener" data-i18n="l_live">Live ↗</a>
+          <a class="btn btn-ghost btn-sm" href="https://github.com/rperezga/closing-room" target="_blank" rel="noopener" data-i18n="l_code">Code ↗</a>
         </p>
       </article>
 
       <!-- kryndel -->
       <article class="card">
         <div class="card-head">
-          <h4>kryndel</h4>
+          <h3>kryndel</h3>
           <span class="badge badge-oss">Apache-2.0</span>
         </div>
-        <p class="card-what" data-i18n="p_kryndel_what">Open-source smart-contract observability for the XRPL ecosystem (EVM Sidechain + native XLS-0101), live on mainnet.</p>
+        <p class="card-what" data-i18n="p_kryndel_what">Open-source smart-contract observability for the XRPL ecosystem, live on mainnet.</p>
         <ul class="card-points">
-          <li data-i18n="p_kryndel_1">Real-time decoded event alerts → Telegram, Discord, signed webhooks</li>
-          <li data-i18n="p_kryndel_2">3-level ABI decoding cascade and SSRF-guarded dispatch with DNS-rebinding protection</li>
-          <li data-i18n="p_kryndel_3">Stripe billing, API keys with rate limiting, 288 tests — Vercel + self-hosted 24/7 worker</li>
+          <li data-i18n="p_kryndel_1">Decoded event alerts → Telegram, Discord, signed webhooks</li>
+          <li data-i18n="p_kryndel_2">SSRF-guarded dispatch with DNS-rebinding protection</li>
+          <li data-i18n="p_kryndel_3">Stripe billing · API keys + rate limiting · 288 tests</li>
         </ul>
         <p class="chips"><span>Next.js</span><span>TypeScript</span><span>MongoDB</span><span>viem</span><span>Stripe</span></p>
         <p class="card-links">
-          <a href="https://kryndel.vercel.app" target="_blank" rel="noopener" data-i18n="l_site">Site ↗</a>
-          <a href="https://github.com/rperezga/kryndel" target="_blank" rel="noopener" data-i18n="l_code">Code ↗</a>
+          <a class="btn btn-primary btn-sm" href="https://kryndel.vercel.app" target="_blank" rel="noopener" data-i18n="l_live">Live ↗</a>
+          <a class="btn btn-ghost btn-sm" href="https://github.com/rperezga/kryndel" target="_blank" rel="noopener" data-i18n="l_code">Code ↗</a>
         </p>
       </article>
 
       <!-- careflow-lite -->
       <article class="card">
         <div class="card-head">
-          <h4>careflow-lite</h4>
+          <h3>careflow-lite</h3>
           <span class="badge badge-ver">v1.0.0</span>
         </div>
-        <p class="card-what" data-i18n="p_careflow_what">Care-operations dashboard (MERN + TypeScript): patients, follow-up tasks and an audit trail, behind role-based auth.</p>
+        <p class="card-what" data-i18n="p_careflow_what">Care-operations dashboard (MERN + TypeScript): patients, follow-up tasks and an audit trail.</p>
         <ul class="card-points">
-          <li data-i18n="p_careflow_1">Role-based access (admin/staff/viewer), audited writes, MongoDB $facet dashboard</li>
-          <li data-i18n="p_careflow_2">Live board over WebSockets; CI runs tests against a real MongoDB container</li>
-          <li data-i18n="p_careflow_3">Nightly backups with a tested, documented restore</li>
+          <li data-i18n="p_careflow_1">Role-based access · audited writes · $facet dashboard</li>
+          <li data-i18n="p_careflow_2">Live board over WebSockets · CI against real MongoDB</li>
+          <li data-i18n="p_careflow_3">Nightly backups with a tested restore</li>
         </ul>
         <p class="chips"><span>React</span><span>TypeScript</span><span>Node/Express</span><span>MongoDB</span><span>Vitest</span></p>
         <p class="card-links">
-          <a href="https://careflow.smectherapy.com" target="_blank" rel="noopener" data-i18n="l_demo">Live demo ↗</a>
-          <a href="https://github.com/rperezga/careflow-lite" target="_blank" rel="noopener" data-i18n="l_code">Code ↗</a>
+          <a class="btn btn-primary btn-sm" href="https://careflow.smectherapy.com" target="_blank" rel="noopener" data-i18n="l_live">Live ↗</a>
+          <a class="btn btn-ghost btn-sm" href="https://github.com/rperezga/careflow-lite" target="_blank" rel="noopener" data-i18n="l_code">Code ↗</a>
         </p>
       </article>
 
       <!-- USCashout Markets -->
       <article class="card">
         <div class="card-head">
-          <h4>USCashout Markets</h4>
-          <span class="badge badge-live" data-i18n="b_live">LIVE</span>
+          <h3>USCashout Markets</h3>
+          <span class="badge badge-live"><span data-i18n="b_live">LIVE</span></span>
         </div>
-        <p class="card-what" data-i18n="p_uscashout_what">Bilingual multi-coin crypto analytics dashboard — zero-build vanilla JS front, Express + MongoDB back.</p>
+        <p class="card-what" data-i18n="p_uscashout_what">Bilingual multi-coin crypto analytics — zero-build vanilla JS front, Express + MongoDB back.</p>
         <ul class="card-points">
-          <li data-i18n="p_uscashout_1">9 coins: technicals, derivatives, news, on-chain whales and an XRPL burn watcher (WebSocket)</li>
-          <li data-i18n="p_uscashout_2">Portfolio view with historical P&amp;L (daily snapshots + price reconstruction)</li>
-          <li data-i18n="p_uscashout_3">Hardened after fixing a real stored XSS: strict CSP, self-hosted Chart.js, honest data labeling</li>
+          <li data-i18n="p_uscashout_1">9 coins · XRPL burn watcher over WebSocket</li>
+          <li data-i18n="p_uscashout_2">Portfolio with historical P&amp;L</li>
+          <li data-i18n="p_uscashout_3">Hardened after fixing a real stored XSS (strict CSP)</li>
         </ul>
         <p class="chips"><span>Node/Express</span><span>MongoDB</span><span>Vanilla JS</span><span>Chart.js</span><span>WebSocket</span></p>
         <p class="card-links">
-          <a href="https://uscashout.com" target="_blank" rel="noopener" data-i18n="l_site">Site ↗</a>
-          <a href="https://github.com/rperezga/uscashout-markets" target="_blank" rel="noopener" data-i18n="l_code">Code ↗</a>
+          <a class="btn btn-primary btn-sm" href="https://uscashout.com" target="_blank" rel="noopener" data-i18n="l_live">Live ↗</a>
+          <a class="btn btn-ghost btn-sm" href="https://github.com/rperezga/uscashout-markets" target="_blank" rel="noopener" data-i18n="l_code">Code ↗</a>
         </p>
       </article>
 
-      <!-- Hermes -->
-      <article class="card">
+      <!-- Hermes — wide -->
+      <article class="card card-wide">
         <div class="card-head">
-          <h4>Hermes</h4>
+          <h3>Hermes</h3>
           <span class="badge badge-priv" data-i18n="b_private">PRIVATE INFRA</span>
         </div>
-        <p class="card-what" data-i18n="p_hermes_what">The self-hosted AI ops agent that runs everything above — my production fleet on one Linux server.</p>
-        <ul class="card-points">
-          <li data-i18n="p_hermes_1">Executes deploy runbooks with hard verification gates: raw output or it didn't happen</li>
-          <li data-i18n="p_hermes_2">GitHub PR/CI operations, scheduled jobs, Telegram alerts, append-only ops log</li>
-          <li data-i18n="p_hermes_3">Job-search pipeline with a non-negotiable rule: nothing ever auto-submits</li>
-        </ul>
-        <p class="chips"><span>Linux</span><span>pm2</span><span>MongoDB/PostgreSQL</span><span>Cloudflare Tunnels</span><span>LLM ops</span></p>
-        <p class="card-links"><span class="muted" data-i18n="p_hermes_note">told in interviews — screenshots &amp; ops log available</span></p>
+        <div class="wide-body">
+          <p class="card-what" data-i18n="p_hermes_what">The self-hosted AI ops agent that runs everything above — my production fleet on one Linux server. It executes deploy runbooks with hard verification gates (raw output or it didn't happen), handles GitHub PR/CI operations and scheduled jobs, and drives a job-search pipeline where nothing ever auto-submits.</p>
+          <p class="chips"><span>Linux</span><span>pm2</span><span>MongoDB/PostgreSQL</span><span>Cloudflare Tunnels</span><span>LLM ops</span></p>
+        </div>
+        <p class="card-links"><span class="muted mono" data-i18n="p_hermes_note">// told in interviews — screenshots &amp; ops log available</span></p>
       </article>
 
     </div>
   </section>
 
-  <!-- ═══ HOW I WORK ═══ -->
+  <!-- ═══ ENGINEERING ETHOS ═══ -->
   <section id="how" class="section">
-    <h3 class="section-title" data-i18n="sec_how">How I work</h3>
+    <p class="kicker" data-i18n="k_how">METHOD</p>
+    <h2 data-i18n="sec_how">The engineering ethos</h2>
+    <p class="section-sub" data-i18n="sec_how_sub">I don't just write code — I design systems that keep working after I stop looking at them.</p>
     <div class="how-grid">
       <div class="how-item">
-        <h5 data-i18n="how_1_t">Like a team, even solo</h5>
+        <span class="how-ico mono">&lt;/&gt;</span>
+        <h4 data-i18n="how_1_t">Like a team, even solo</h4>
         <p data-i18n="how_1_p">GitHub Flow with protected main, reviewed PRs, Conventional Commits, and CI (lint + type-check + tests + build) on every push.</p>
       </div>
       <div class="how-item">
-        <h5 data-i18n="how_2_t">Evidence-based ops</h5>
+        <span class="how-ico mono">✓</span>
+        <h4 data-i18n="how_2_t">Evidence-based ops</h4>
         <p data-i18n="how_2_p">"Demand the evidence of the effect, not the story of it." Health checks that touch the DB, backups that get restored, deploys verified with raw output.</p>
       </div>
       <div class="how-item">
-        <h5 data-i18n="how_3_t">Own the whole lifecycle</h5>
-        <p data-i18n="how_3_p">Self-hosted: pm2, MongoDB/PostgreSQL with auth, loopback binds behind Cloudflare Tunnels, nightly tested backups, security hardening (CSP, XSS, SSRF).</p>
+        <span class="how-ico mono">∞</span>
+        <h4 data-i18n="how_3_t">Own the whole lifecycle</h4>
+        <p data-i18n="how_3_p">Self-hosted: pm2, MongoDB/PostgreSQL with auth, loopback binds behind Cloudflare Tunnels, nightly tested backups, hardening (CSP, XSS, SSRF).</p>
       </div>
       <div class="how-item">
-        <h5 data-i18n="how_4_t">AI with adults in the room</h5>
-        <p data-i18n="how_4_p">I integrate LLMs where they help (drafting, triage, ops) with schema-validated output, logging, and a human approving anything that matters.</p>
+        <span class="how-ico mono">◈</span>
+        <h4 data-i18n="how_4_t">AI with adults in the room</h4>
+        <p data-i18n="how_4_p">LLMs where they help — drafting, triage, ops — with schema-validated output, logging, and a human approving anything that matters.</p>
       </div>
     </div>
   </section>
 
-  <!-- ═══ EXPERIENCE ═══ -->
+  <!-- ═══ TIMELINE ═══ -->
   <section id="experience" class="section">
-    <h3 class="section-title" data-i18n="sec_exp">Experience</h3>
+    <p class="kicker" data-i18n="k_exp">TRACK RECORD</p>
+    <h2 data-i18n="sec_exp">Professional timeline</h2>
     <ul class="timeline">
       <li>
-        <h5><span data-i18n="x1_role">Independent Full-Stack Developer</span> · <span class="muted">Freelance</span></h5>
+        <h4><span data-i18n="x1_role">Independent Full-Stack Developer</span> <span class="muted">· Freelance — <span data-i18n="x_now">Present</span></span></h4>
         <p data-i18n="x1_p">Designed, built and operate the six production applications above — solo, end-to-end.</p>
       </li>
       <li>
-        <h5><span data-i18n="x2_role">Tier 2 IT Support Specialist</span> · <span class="muted">Humana</span></h5>
+        <h4><span data-i18n="x2_role">Tier 2 IT Support Specialist</span> <span class="muted">· Humana</span></h4>
         <p data-i18n="x2_p">Enterprise Windows support: endpoints, identity, remote tooling and escalations at scale.</p>
       </li>
       <li>
-        <h5><span data-i18n="x3_role">Network Administrator &amp; Technical Support</span> · <span class="muted">One Homecare Solutions</span></h5>
+        <h4><span data-i18n="x3_role">Network Administrator &amp; Technical Support</span> <span class="muted">· One Homecare Solutions</span></h4>
         <p data-i18n="x3_p">LAN/network administration, user support and infrastructure upkeep for a healthcare operator.</p>
       </li>
       <li>
-        <h5><span data-i18n="x4_role">Web Developer &amp; Support</span> · <span class="muted">Log Suite Corp</span></h5>
+        <h4><span data-i18n="x4_role">Web Developer &amp; Support</span> <span class="muted">· Log Suite Corp</span></h4>
         <p data-i18n="x4_p">Web development and technical support for logistics software.</p>
       </li>
       <li>
-        <h5><span data-i18n="x5_role">B.Sc.</span> · <span class="muted">Universidad Tecnológica de La Habana (CUJAE)</span></h5>
+        <h4><span data-i18n="x5_role">B.Sc. in Engineering</span> <span class="muted">· Universidad Tecnológica de La Habana (CUJAE)</span></h4>
         <p data-i18n="x5_p">Engineering degree.</p>
       </li>
     </ul>
   </section>
 
-  <!-- ═══ SKILLS ═══ -->
+  <!-- ═══ TOOLKIT ═══ -->
   <section class="section">
-    <h3 class="section-title" data-i18n="sec_skills">Skills</h3>
-    <div class="skills">
-      <p><strong>Core:</strong> TypeScript · JavaScript · React · Node.js/Express · MongoDB · PostgreSQL/Prisma · REST · WebSockets</p>
-      <p><strong data-i18n="sk_test">Testing/CI:</strong> Vitest · Supertest · Testing Library · GitHub Actions · GitHub Flow</p>
-      <p><strong>Ops:</strong> Linux · pm2 · Cloudflare Tunnels/DNS · systemd · backups/restore · SSH</p>
-      <p><strong data-i18n="sk_sec">Security:</strong> CSP · XSS/SSRF remediation · scrypt/JWT · HttpOnly cookies · rate limiting · HMAC</p>
-      <p><strong>AI:</strong> OpenAI API · schema-validated LLM output · AI agent operations</p>
-      <p><strong data-i18n="sk_also">Also:</strong> Python · Stripe · i18n · OSRM/geo · Zod · Tailwind · Windows Server · Active Directory</p>
+    <p class="kicker" data-i18n="k_skills">STACK</p>
+    <h2 data-i18n="sec_skills">The toolkit</h2>
+    <div class="toolkit">
+      <div class="tk-group">
+        <p class="tk-title" data-i18n="tk_1">CORE ENGINEERING</p>
+        <p class="chips"><span>TypeScript</span><span>JavaScript</span><span>React</span><span>Node.js/Express</span><span>MongoDB</span><span>PostgreSQL/Prisma</span><span>REST</span><span>WebSockets</span><span>Python</span></p>
+      </div>
+      <div class="tk-group">
+        <p class="tk-title" data-i18n="tk_2">TESTING &amp; QUALITY</p>
+        <p class="chips"><span>Vitest</span><span>Supertest</span><span>Testing Library</span><span>GitHub Actions</span><span>GitHub Flow</span><span>Conventional Commits</span></p>
+      </div>
+      <div class="tk-group">
+        <p class="tk-title" data-i18n="tk_3">OPS &amp; SECURITY</p>
+        <p class="chips"><span>Linux</span><span>pm2</span><span>Cloudflare Tunnels</span><span>systemd</span><span>backups/restore</span><span>CSP</span><span>XSS/SSRF hardening</span><span>scrypt/JWT</span><span>HMAC</span></p>
+      </div>
+      <div class="tk-group">
+        <p class="tk-title" data-i18n="tk_4">AI &amp; INTEGRATIONS</p>
+        <p class="chips"><span>OpenAI API</span><span>schema-validated LLM output</span><span>AI agent ops</span><span>Stripe</span><span>i18n</span><span>OSRM/geo</span><span>Zod</span></p>
+      </div>
     </div>
   </section>
 
-  <!-- ═══ CONTACT (fondo de código del sitio original) ═══ -->
+  <!-- ═══ FINAL CTA ═══ -->
   <div class="contact-wrap">
   <section id="contact" class="section section-contact">
-    <h3 class="section-title" data-i18n="sec_contact">Let's talk</h3>
-    <p data-i18n="contact_p">Hiring for full-stack, backend or IT? The fastest way to evaluate me is to click the projects above — then write me.</p>
+    <h2 class="cta-h" data-i18n="sec_contact">The fastest way to evaluate me<br />is to click my work.</h2>
+    <p data-i18n="contact_p">Hiring for full-stack, backend or IT? Let's talk.</p>
     <div class="hero-cta">
       <a class="btn btn-primary" href="mailto:rperezga@gmail.com">rperezga@gmail.com</a>
-      <a class="btn" href="https://github.com/rperezga" target="_blank" rel="noopener">GitHub</a>
-      <a class="btn" href="https://www.linkedin.com/in/roger-perez-30467065/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn btn-ghost" href="https://github.com/rperezga" target="_blank" rel="noopener">GitHub ↗</a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/roger-perez-30467065/" target="_blank" rel="noopener">LinkedIn ↗</a>
     </div>
   </section>
   </div>
@@ -276,11 +309,12 @@
 </main>
 
 <footer class="foot">
-  <p><span data-i18n="foot_1">Built with zero dependencies — plain HTML/CSS/JS, no framework, no build step.</span>
+  <p><span class="brand-sm">RP<span class="brand-dot">.</span></span>
+  <span data-i18n="foot_1">Built with zero dependencies — plain HTML/CSS/JS, no framework, no build step.</span>
   <a href="https://github.com/rperezga/rogerperezportfolio" target="_blank" rel="noopener" data-i18n="foot_src">View source ↗</a></p>
   <p class="muted">© 2026 Roger Perez</p>
 </footer>
 
-<script src="./app.js?v=2"></script>
+<script src="./app.js?v=3"></script>
 </body>
 </html>
